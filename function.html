@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //  Simple function 
+        //  function vowels(text) {
+        //     let count =0;
+        //     for( let i of text  ){
+        //         if(i ==="a" || i === "e" || i === "i" || i === "0" || i=== "u"){
+        //             count++;
+        //         }
+        //         console.log(count)
+        //     }
+        // }
+        // vowels("aaa")
+
+            // Arrow Function 
+        // let vowels = (text) => {
+        //     let count =0;
+        //     for( let i of text  ){
+        //         if(i ==="a" || i === "e" || i === "i" || i === "0" || i=== "u"){
+        //             count++;
+        //         }
+        //         console.log(count)
+        //     }
+        // }
+        // vowels("");
+
+        // Using for each loop
+
+            // let arrr = [1,2,3,4,5,6];
+            // arrr.forEach((val,idx,arrr)=>{
+            //     console.log(val,idx,arrr)
+            // });
+
+
+            //practice question for each loop
+
+            // let array = [1,2,3,4,5,6,6,7,7];
+            // array.forEach((val,idx)=>{
+            //     console.log(val*val ,idx)
+
+            // })
+
+            // MAP METHOD 
+
+        //     let array = [1,2,3,4,5,6,7];
+        //    let newarr= array.map((val,)=>{
+        //         return val*2
+
+        //     })
+        //     console.log(newarr)
+
+        // FILTER METHOD 
+
+            // let array = [1,2,3,4,5,6,7];
+            // let newarr = array.filter((val)=>{
+            //     return val % 2 !== 0
+            // })
+            // console.log(newarr);
+
+
+            //REDUCED METHOD
+
+            // let arr=[1,2,3,4,3,2,5,1,20,23,456];
+            // const output = arr.reduce((res , curr)=>{
+            //     return res > curr ? res : curr;
+            // })  
+            // console.log(output);
+
+            //question number 1
+
+        //     let arr = [89,90,97,79,56,,90,93,93,92];
+
+        //    let newarr= arr.filter((val)=>{
+        //         return val > 90
+
+        //     })
+        //     console.log(newarr);
+
+
+        // question number 1
+
+        let n = prompt(" number dal bharwy :")
+
+        let arr=[];
+        for (let i = 1 ; i <= n ; i++) {
+                arr[i-1] = i;
+        }
+        console.log(arr)
+
+        let newarr=arr.reduce((pre,curr)=>{
+            return pre + curr
+        })
+        console.log(newarr)
+
+        let product=arr.reduce((pre,curr)=>{
+            return pre *8
+              curr
+        })
+        console.log(product);
+
+
+
+
+
+
+
+
+            
+
+
+
+
+    </script>
+</body>
+</html>

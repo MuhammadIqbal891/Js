@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let choice;
+        let cars = ["Volvo","Toyota","Honda","suzuki"];
+
+        //function to display cars list
+        function displaycars(val){
+            for(let i=1;i<=val.length;i++){
+                console.log(val)
+            }
+        }
+        //function to add car in list
+        function addcars (val){
+            let newcar= prompt("Enter the name of the car to add in the list ")
+            newcar.push(cars)
+            console.log("The new car has been added")
+            // displaycars(cars)
+        }
+    </script>
+</body>
+</html>
