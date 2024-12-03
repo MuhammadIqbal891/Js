@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [3, 7, 2, 9, 15, 6];
+
+
+let largestNumber = numbers.reduce((recent, current) => {
+    return current > recent ? current : recent;
+}, numbers[0]);//initial max value array k pahly element main set hai yani k  0  index
+
+console.log("The largest number is:", largestNumber);
+
+
+    </script>
+</body>
+</html>
